@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* === Plugin styles === */
+
+
+@import '~react-datepicker/dist/react-datepicker.css';
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+
+@import "../assets/styles/variables";
+@import "~compass-mixins/lib/compass";
+@import "~compass-mixins/lib/animate";
+
+/* === Icon fonts === */
+@import "~@mdi/font/scss/materialdesignicons";
+
+/* === Template mixins === */
+@import "../assets/styles/mixins/animation";
+@import "../assets/styles/mixins/misc";
+@import "../assets/styles/mixins/color-functions";
+
+/* === Core Styles === */
+@import "../assets/styles/misc";
+@import "../assets/styles/spinner";
+
+
+/* === Layout === */
+@import "../assets/styles/navbar";
+@import "../assets/styles/footer";

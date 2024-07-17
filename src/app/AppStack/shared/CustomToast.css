@@ -1,0 +1,31 @@
+/* CustomToast.css */
+
+.toast-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.toast-wrapper p {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: #fff;
+}
+
+.toast-wrapper a {
+  text-decoration: underline;
+  color: #007bff; /* Link color */
+  cursor: pointer;
+}
+
+.toast-wrapper a:hover {
+  color: #0056b3; /* Hover color */
+}
+
+/* Icon styles (adjust these as needed) */
+.toast-icon {
+  margin-right: 10px;
+  font-size: 24px;
+}

@@ -1,0 +1,231 @@
+.success {
+  text-align: center;
+
+  h2 {
+    color: seagreen;
+  }
+
+  a {
+    display: block;
+  }
+}
+
+.checkout-form {
+  // width: 550px;
+  padding: 1em;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.15);
+
+  p {
+    text-align: center;
+  }
+
+  label {
+    min-width: 500px;
+    color: #6b7c93;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+  }
+
+  input,
+  .StripeElement {
+    display: block;
+    margin: 5px 0 5px 0;
+    padding: 5px 5px;
+    font-size: 1em;
+    font-family: 'Source Code Pro', monospace;
+    box-shadow: rgba(50, 50, 93, 0.14902) 0px 1px 3px,
+      rgba(0, 0, 0, 0.0196078) 0px 1px 0px;
+    border: 0;
+    outline: 0;
+    border-radius: 4px;
+    background: white;
+
+    &::placeholder {
+      color: #aab7c4;
+    }
+
+    &:focus,
+    .StripeElement--focus {
+      box-shadow: rgba(50, 50, 93, 0.109804) 0px 4px 6px,
+        rgba(0, 0, 0, 0.0784314) 0px 1px 3px;
+      -webkit-transition: all 150ms ease;
+      transition: all 150ms ease;
+    }
+  }
+
+  .order-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-decoration: none;
+    margin-top: 5%;
+    background-color: #008cdd;
+    border: 1px solid #008cdd;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    width: 200px;
+    transition: opacity 200ms;
+    cursor: pointer;
+
+    &.success {
+      background-color: seagreen;
+      border-color: seagreen;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
+
+  a {
+    display: block;
+    text-align: center;
+    margin-top: 1em;
+  }
+}
+
+/* Styles for the container div */
+.card-form-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+/* Styles for the CardElement wrapper */
+.card-element {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 10px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+/* Styles for the card number field */
+.CardField-cardNumber {
+  margin-bottom: 10px;
+}
+
+/* Styles for the expiry date field */
+.CardField-cardExpiry {
+  margin-bottom: 10px;
+}
+
+.columns.selected {
+  background-color: lightgrey;
+  color: #fff; /* Change text color for better contrast */
+}
+
+.payment-form {
+  width: 100%; /* Payment form takes the full width of the container */
+  border: 1px solid #ccc; /* Add borders for visual separation */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.error-message-green{
+  color: #5cb85c;
+  font-size: 16px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.error-message-red{
+  color: red;
+  font-size: 16px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+/* Example for a styled error box */
+.error-box {
+  /* border: 1px solid #d9534f; */
+  background-color: #f5f5f5;
+  color: #d9534f;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.amount-container {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+
+.amount-container > div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+.amount-text {
+  margin-right: 10px;
+}
+
+.amount-line {
+  border-top: 1px solid #ccc; /* Adjust color and thickness as needed */
+  margin-top: 5px; /* Adjust spacing between line and content */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.columns {
+  float: left;
+  width: 33.3%;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 10px;
+  text-align: center;
+}
+
+.price .grey {
+  background-color: #F38A2C;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
+
+.dialogTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

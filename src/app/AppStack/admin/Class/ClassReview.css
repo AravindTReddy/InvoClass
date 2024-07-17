@@ -1,0 +1,46 @@
+/* Style for the main container */
+.review-container {
+  padding: 20px;
+  border-radius: 5px;
+  /* max-width: 800px; */
+  margin: 0 auto;
+}
+
+/* Style for section headers */
+.review-section {
+  margin-top: 20px;
+}
+
+.review-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Style for individual data items */
+.review-item {
+  margin-bottom: 10px;
+}
+
+.review-item p {
+  margin: 0;
+}
+
+/* Style for the review button */
+.review-button {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.review-button button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.review-button button:hover {
+  background-color: #0056b3;
+}

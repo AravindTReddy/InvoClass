@@ -1,0 +1,987 @@
+/* #F38A2C primary color */
+/* #606060 secondary color*/
+
+@font-face {
+    font-family: "Carbon Bold";
+    src: url("https://db.onlinewebfonts.com/t/4104a580e6f3e91f7e6b93986bcddafa.eot");
+    src: url("https://db.onlinewebfonts.com/t/4104a580e6f3e91f7e6b93986bcddafa.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/4104a580e6f3e91f7e6b93986bcddafa.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/4104a580e6f3e91f7e6b93986bcddafa.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/4104a580e6f3e91f7e6b93986bcddafa.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/4104a580e6f3e91f7e6b93986bcddafa.svg#Carbon Bold")format("svg");
+}
+
+/* Apply the Carbon Bold font to the entire document */
+body, code {
+  font-family: 'Carbon Bold', sans-serif;
+  padding-right: 0px !important;
+  margin: 0;
+}
+
+/* Apply the custom font to headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Carbon Bold', sans-serif;
+}
+
+p {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 12px;
+}
+
+des {
+  font-size: 10px;
+}
+.spacer {
+  font-size: 0;
+  height: 30px;
+  line-height: 0;
+}
+.container {
+  overflow: hidden;
+  margin: 1em;
+  max-width: 100%
+}
+.modal-90w {
+  max-width: 99% !important;
+}
+.modal-90w-header {
+  /* font-family: 'kallisto', sans-serif; */
+  font-family: 'Lexend Deca', sans-serif;
+  color: #F38A2C;
+  background-color: 'white';
+  font-size: 12px;
+}
+.modal-90w-body {
+  min-height: calc(100vh - 200px);
+  max-height: calc(100vh - 200px);
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.modal-90w-body-fixed {
+  min-height: calc(100vh - 230px);
+  max-height: calc(100vh - 230px);
+}
+.modal-80w {
+  max-width: 80% !important;
+}
+.modal-60w {
+  max-width: 60% !important;
+}
+.modal-30w {
+  max-width: 30% !important;
+}
+.modal-right-30w {
+  max-width: 30% !important;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+}
+.modal-30w-body {
+  min-height: calc(100vh - 200px);
+  max-height: calc(100vh - 200px);
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.rowC {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  max-width: 99%
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.clear {
+  clear: both;
+}
+
+.rootcard {
+  width: 100%;
+  margin: 1px;
+}
+
+.root {
+  width: 255px;
+  margin: 10px;
+}
+
+.icon-small i {
+  float: left;
+  margin-right: 10px;
+  height: 38px;
+  width: 38px;
+  color: #fff;
+  background-color: red;
+  border-radius: 10%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.icon-small+p {
+  clear: left;
+  margin-top: 15px;
+}
+
+.icon-small h4,
+.icon-small h5 {
+  text-align: left;
+}
+
+.card {
+  margin-bottom: 10px;
+}
+.card-header {
+  font-family: 'Carbon Bold', sans-serif;
+  /* color: #F38A2C; */
+  background-color: 'white';
+  /* font-weight: 500; */
+  font-size: 18px;
+  cursor: default;
+  /* font-weight: bold; */
+}
+
+.secondaryheading {
+  font-size: 13px;
+}
+
+.accountheading {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.list {
+  width: '100%';
+  max-width: 760px;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  margin-bottom: 15px
+}
+
+.card-bodynew {
+  margin: 10px;
+}
+
+
+
+.vertical {
+  border-left: 2px solid black;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+}
+
+.AccordionDetails {
+  height: 350px;
+  overflow: scroll;
+}
+.AccordionDetails::-webkit-scrollbar {
+  display: none;
+}
+.gridList {
+  height:350px;
+  scroll-behavior: smooth;
+}
+.iframe::-webkit-scrollbar {
+  display: none;
+}
+.gridList::-webkit-scrollbar {
+  display: none;
+}
+.fixed {
+  position: fixed;
+}
+.splitter {
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+.page-heading {
+  /* font-family: "Kallisto", sans-serif; */
+  font-family: 'Lexend Deca', sans-serif;
+  background-color: #606060;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+}
+.page-heading span{
+  font-size: 17px;
+  margin: 5px;
+  align-items: center;
+  justify-content: center;
+  font-weight: 550;
+  /* font-family: "Kallisto", sans-serif; */
+  font-family: 'Lexend Deca', sans-serif;
+}
+.custom-file-upload {
+    display: inline-block;
+    margin: 1px;
+    cursor: pointer;
+    width: 100%;
+}
+.choose::-webkit-file-upload-button {
+  color: white;
+  display: inline-block;
+  background: #1CB6E0;
+  border: none;
+  padding: 2px 5px;
+  font-weight: 700;
+  border-radius: 3px;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 10pt;
+}
+.myerror {
+  color: red;
+  /* font-family: "Kallisto", sans-serif; */
+  font-family: 'Lexend Deca', sans-serif;
+}
+.table td:hover {
+  cursor: pointer;
+}
+.circle {
+      border: 5px solid #000;
+      width: 100px;
+      height: 100px;
+      line-height: 90px;
+      -webkit-border-radius: 100px;
+      -moz-border-radius: 100px;
+      border-radius: 100px;
+      text-align: center;
+}
+
+.filters * {
+  display: inline-block;
+}
+.filters label {
+  text-align: center;
+  border: 1px solid lightgray;
+  padding: 0.3rem 0.3rem;
+  min-width: 50px;
+  line-height: normal;
+  cursor: pointer;
+  transition: all 0.1s;
+  height:30px;
+}
+.filters .active {
+  background: var(--green);
+}
+.filters label:hover {
+  background: var(--green);
+  color: var(--white);
+}
+.filters span:hover {
+  background: var(--green);
+  color: var(--white);
+}
+.button_block {
+  width: 100%;
+  /* background-color: #606060;  */
+  /* border: none;
+  color: white;
+  letter-spacing: 0.3px;
+  font-weight: bold; */
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  transition: 0.2s all;
+}
+.button {
+  /* background-color: #606060; */
+  border: none;
+  color: white;
+  letter-spacing: 0.3px;
+  font-weight: bold;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  transition: 0.2s all;
+}
+.refresh {
+  cursor: pointer;
+}
+.button:hover, .button_block:hover {
+  color: rgba(243, 138, 44, 0.9) /* Brixon Orange */
+}
+.button:active, .button_block:active {
+  transform: scale(0.98);
+  /* Scaling button to 0.98 to its original size */
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  /* Lowering the shadow */
+}
+.refresh:active {
+  transform: scale(0.9);
+}
+.dialog {
+  margin: 10px;
+}
+.col-sm-12, .col-sm-6 span{
+  font-size: 12px;
+}
+select {
+  width: 100px;
+}
+.notifications-card-unread {
+  cursor: pointer;
+  background-color: rgba(230, 230, 255, 0.3);
+}
+.notifications-card-unread:hover {
+  cursor: pointer;
+  background-color: rgba(230, 230, 255, 0.7);
+}
+.notifications-card-read {
+  cursor: pointer;
+}
+.notifications-card-read:hover {
+  cursor: pointer;
+  background-color: rgba(230, 230, 255, 0.7);
+}
+.scroll{
+  max-height: calc(100vh - 350px);
+  display: grid;
+  border-radius: 5px;
+  grid-gap: 3px;
+  overflow-y:scroll;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.fixed-height {
+  max-height: 500px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.container_login{
+  background: url("../assets/images/auth/loginscreen-bg.png");
+  background-size: cover;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 8em auto 3em;
+}
+header{
+  grid-row: 1;
+  width: 100%;
+  position: relative;
+}
+.body{
+  grid-row: 2;
+  overflow-y: auto;
+}
+.footer_login{
+  grid-row: 3;
+  position:absolute;
+  bottom:0;
+  width: 100%;
+  height: 50px;
+}
+.loader-container{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #F8F8F8FF;
+}
+.loader{
+  text-align: center;
+  left: 40%;
+  top: 30%;
+  z-index: 1000;
+  position: absolute;
+}
+.password-icon {
+  position: absolute;
+  right: 25px;
+  /* top: 15px; */
+  margin-top: 10px;
+  cursor: pointer;
+}
+.weekDays-selector input[type=checkbox] + label {
+  display: inline-block;
+  border-radius: 6px;
+  margin-right: 3px;
+  text-align: center;
+  cursor: pointer;
+}
+.checkboxes label {
+  display: inline-block;
+  padding-right: 10px;
+  white-space: nowrap;
+}
+.checkboxes input {
+  vertical-align: middle;
+}
+.rightArrowImage {
+  width: 75px;
+  height: 25px;
+}
+.rightArrowImageText {
+  font-size: 13px;
+  font-style: italic;
+}
+.responsive {
+  width: 100%;
+  max-width: 40px;
+  height: auto;
+}
+.card-img-top {
+  height: 100px;
+  min-width: 100%;
+  border: 2px solid;
+  margin-bottom: 20px;
+}
+.dropdown-border {
+  border-style: dashed;
+}
+
+.body .env_iframe {
+   /* margin-top: 70px; */
+   height: calc(85vh);
+   border-radius: 8px;
+}
+
+#overlay {
+  z-index: 0;
+  height: 100%;
+  background-color: transparent;
+  left: 0px;
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  width:100%;
+}
+
+.dude_empty {
+  text-align: center;
+  /* height: calc(100vh - 400px); */
+}
+.dude_empty img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+.caption {
+  margin-top: 15px;
+  display: block;
+  font-weight: normal;
+  font-size: 15px
+}
+.submenu-title {
+  margin: 5px;
+  font-size: 12px;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: left;
+}
+.student_card {
+  border: calc(8px + 0.2vw) ridge black;
+	background-origin: border-box;
+	background-clip: content-box, border-box;
+	background-size: cover;
+	box-sizing: border-box;
+	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+  height: 65vh;
+  overflow: scroll;
+  width: 100%;
+}
+#keyboard {
+    padding: 0.75em 1.5em;
+    border: 0.062em solid #069;
+    border-radius: 0.75em;
+    background-color: #87cdf9;
+    background-image: linear-gradient( to bottom, #87cdf9, #549ac6);
+    box-shadow: 0.25em 0.25em 0.25em #999;
+    text-align: center;
+ }
+#keyboard div {
+    margin: 0.4em 0;
+ }
+#space {
+    width: 14em;
+ }
+#keyboard label {
+    margin-top: 1.25em;
+    text-decoration: underline;
+ }
+#keyboard input {
+    box-shadow: 0.15em 0.15em 0.15em #666;
+ }
+#keyboard input[type="text"] {
+    margin-top: 1.25em;
+    border: 0.062em solid #666;
+    border-radius: 0.25em;
+    box-shadow: none;
+ }
+#keyboard #back {
+    font-weight: bold;
+ }
+.show {
+    display: inline-block;
+ }
+.hide {
+    display: none;
+ }
+
+.class-content::-webkit-scrollbar {
+  display: none;
+}
+
+ .node__root > circle {
+   fill: red;
+   r: 10;
+ }
+
+ .node__branch > circle {
+   fill: yellow;
+   r: 8;
+ }
+
+ .node__leaf > circle {
+   fill: green;
+   /* Let's also make the radius of leaf nodes larger */
+   r: 5;
+ }
+
+.g-title {
+  /* font-family: Georgia, sans-serif; */
+  font-size: 0.75em;
+  letter-spacing: 1px;
+  color: linear-gradient(45deg, #553c9a, #ee4b2b);
+  margin: 1em
+}
+
+.vm {
+  word-wrap: break-word;
+  /* background: #FF7A59; */
+  max-width: 100px;
+  /* height: 24px; */
+  display: block;
+  align-items: center;
+  text-align: center;
+  font-size: 8px;
+  margin: 2px;
+  /* border: 1px dashed darkgreen; */
+  /* cursor: move; */
+}
+
+.subnet {
+  margin-right: .5rem;
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+  color: black;
+  text-align: center;
+  font-size: .6rem;
+  line-height: normal;
+  float: left;
+  background:#ECEFF1;
+  height:70vh;
+}
+
+
+ /* Hide scrollbar for IE, Edge and Firefox */
+ /* -ms-overflow-style: none;
+ scrollbar-width: none;   */
+/* Hide scrollbar for Chrome, Safari and Opera */
+/* .cloud::-webkit-scrollbar {
+ display: none;
+} */
+
+.checkbox-div {
+  background-color: #606060;
+  width: 100%;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+.toast-message {
+   font-size: 13px;
+   font-family: 'Lexend Deca', sans-serif;
+}
+h2 {
+  font-size: 2em;
+}
+
+.left,
+.right {
+  overflow: hidden;
+}
+
+.left {
+  float: left;
+  min-height: calc(100vh - (.5em + 10px));
+  /* margin-top: 1em; */
+  overflow: scroll;
+}
+
+.right {
+  min-height: calc(100vh - (.5em + 6px));
+  float: right;
+}
+.react-pdf__Page__canvas {
+    margin: 0 auto;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.class-content {
+  height: 500px;
+}
+#x {
+    position: absolute;
+    background: rgba(0,0,0,0.2);
+    color: white;
+    top: -10px;
+    right: -10px;
+}
+
+.tabLabel {
+  font-size: 10px;
+  /* text-transform: none; */
+  font-weight: bold;
+}
+
+.G {
+  font-size: 12px;
+  font-weight: bold;
+  color: black;
+  width: 100% !important;
+}
+
+.small-form {
+  width:20%;
+  height: 20px;
+}
+
+.template {
+  /* font-family: 'Raleway', Arial, sans-serif; */
+  color: #000000;
+  text-align: center;
+  font-size: 16px;
+  width: 100%;
+  /* max-width: 1000px; */
+  margin: 40px 10px;
+}
+.template .plan {
+  margin: 10px;
+  min-width: 300px;
+  position: relative;
+  float: left;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.template * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.template header {
+  position: relative;
+}
+.template .plan-title {
+  position: relative;
+  top: 0;
+  font-weight: 500;
+  padding: 5px 5px;
+  margin: 0 auto;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin: 0;
+  display: inline-block;
+  background-color: #222f3d;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.template .plan-cost {
+  padding: 0px 10px 20px;
+}
+.template .plan-price {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 800;
+  font-size: 2em;
+  color: #34495e;
+}
+.template .plan-type {
+  opacity: 0.6;
+}
+.template .plan-features {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  list-style: outside none none;
+  font-size: 0.8em;
+}
+.template .plan-features li {
+  border-top: 1px solid #d2d7e2;
+  padding: 10px 5%;
+}
+.template .plan-features li:nth-child(even) {
+  background: rgba(0, 0, 0, 0.08);
+}
+.template .plan-features i {
+  margin-right: 8px;
+  opacity: 0.4;
+}
+.template .plan-select {
+  border-top: 1px solid #d2d7e2;
+  padding: 10px 10px 0;
+}
+.template .plan-select button {
+  background-color: #222f3d;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  -webkit-transform: translateY(50%);
+  transform: translateY(50%);
+  font-weight: 800;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.template .plan-select button:hover {
+  background-color: #46627f;
+}
+.template .featured {
+  margin-top: -10px;
+  background-color: #34495e;
+  color: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+.template .featured .plan-title,
+.template .featured .plan-price {
+  color: #ffffff;
+}
+.template .featured .plan-cost {
+  padding: 10px 10px 20px;
+}
+.template .featured .plan-features li {
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
+.template .featured .plan-select {
+  padding: 20px 10px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
+@media only screen and (max-width: 767px) {
+  .template .plan {
+    width: 50%;
+  }
+  .template .plan-title,
+  .template .plan-select a {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  .template .plan-cost,
+  .template .featured .plan-cost {
+    padding: 20px 10px 20px;
+  }
+  .template .plan-select,
+  .template .featured .plan-select {
+    padding: 10px 10px 10px;
+  }
+  .template .featured {
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width: 440px) {
+  .template .plan {
+    width: 100%;
+  }
+}
+
+.checkout-form button {
+  background-color: #222f3d;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  font-weight: 800;
+  display: inline-block;
+}
+.checkout-form button:hover {
+  background-color: #46627f;
+}
+
+.student-overview label {
+  color: #B4886B;
+  font-weight: bold;
+  display: block;
+  padding-top: 30px;
+  width: 80vw; /* This makes the div take up the full width of its container */
+  max-width: 100%; /* You can set a maximum width if needed */
+}
+.student-overview label:after { content: ": " }
+
+.student-overview span {
+  font-size: 13px;
+  word-spacing: 1px;
+}
+
+.video-player {
+    height: 80vh; /* Set the desired height */
+    width: 100%; /* Set the desired width */
+}
+
+.iframe-dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  z-index: 100000;
+
+}
+
+.dialog-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  pointer-events: none;
+}
+
+iframe {
+  width: 100%;
+  height: 400px;
+  border: none;
+}
+
+/* styles.css */
+.custom-table-title {
+  font-family: 'Lexend Deca', sans-serif;
+  color: #F38A2C;
+  background-color: 'white';
+  font-size: 16px;
+  cursor: default;
+  font-weight: bold;
+}
+
+.custom-step-label {
+  margin-top: 4px; /* Adjust this value to reduce vertical spacing */
+  margin-bottom: 4px; /* Adjust this value to reduce vertical spacing */
+}
+
+/* Define the custom styles for the completed state */
+.step-icon-completed {
+  color: #1976d2; /* Change to your desired color */
+}
+
+/* Define the custom styles for the active state */
+.step-icon-active {
+  color: #1976d2; /* Change to your desired color */
+}
+
+.logo {
+  font-size: 30px;
+}
+
+.payment-popup {
+  position: absolute;
+  top: 0;
+  left: calc(100% + 10px); /* Adjust the distance between signup box and popup */
+  width: 100%; /* Adjust width as needed */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 9999; /* Ensure popup is on top of other elements */
+}
+
+.popup-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid white; /* Set the background color of the popup */
+  top: 60%;
+  right: -10px; /* Position the arrow on the right side of the container */
+  transform: translateY(-50%);
+}
+
+.customDatePickerWidth,
+.customDatePickerWidth > div.react-datepicker-wrapper,
+.customDatePickerWidth > div > div.react-datepicker__input-container
+.customDatePickerWidth > div > div.react-datepicker__input-container input {
+   width: 100%;
+   z-index: 9999 !important; /* Adjust the value as needed */
+}
+
+.invite-copy {
+  font-size: .75em;
+  float: left;
+}
+
+.steps-container {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 16px;
+  background-color: #f9f9f9;
+}
+
+.preview-block {
+  height: 100%;
+  overflow: scroll;
+}
+
+.back-button {
+  font-size: 0.70rem;
+  text-align: left;
+}
+
+.react-datepicker {
+  z-index: 1000
+}
+
+.default_card {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
