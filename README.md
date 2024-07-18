@@ -18,6 +18,8 @@ InvoClass is a SaaS platform designed to provide a comprehensive solution for ma
 - **Database**: DynamoDB
 - **Real-time Communication**: WebSockets via API Gateway
 - **Cloud Services**: AWS and Azure
+- **Payment**: Stripe
+- **LTI**: BrightSpace D2L (LTI 1.3), Canvas
 
 ## AWS Services Used
 
